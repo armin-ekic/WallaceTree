@@ -1,0 +1,969 @@
+|wallaceTree
+a[0] => carrySave:cs0.a[0]
+a[1] => carrySave:cs0.a[1]
+a[2] => carrySave:cs0.a[2]
+a[3] => carrySave:cs0.a[3]
+a[4] => carrySave:cs0.a[4]
+a[5] => carrySave:cs0.a[5]
+b[0] => carrySave:cs0.b[0]
+b[1] => carrySave:cs0.b[1]
+b[2] => carrySave:cs0.b[2]
+b[3] => carrySave:cs0.b[3]
+b[4] => carrySave:cs0.b[4]
+b[5] => carrySave:cs0.b[5]
+c[0] => carrySave:cs0.c[0]
+c[1] => carrySave:cs0.c[1]
+c[2] => carrySave:cs0.c[2]
+c[3] => carrySave:cs0.c[3]
+c[4] => carrySave:cs0.c[4]
+c[5] => carrySave:cs0.c[5]
+d[0] => carrySave:cs1.a[0]
+d[1] => carrySave:cs1.a[1]
+d[2] => carrySave:cs1.a[2]
+d[3] => carrySave:cs1.a[3]
+d[4] => carrySave:cs1.a[4]
+d[5] => carrySave:cs1.a[5]
+e[0] => carrySave:cs1.b[0]
+e[1] => carrySave:cs1.b[1]
+e[2] => carrySave:cs1.b[2]
+e[3] => carrySave:cs1.b[3]
+e[4] => carrySave:cs1.b[4]
+e[5] => carrySave:cs1.b[5]
+f[0] => carrySave:cs1.c[0]
+f[1] => carrySave:cs1.c[1]
+f[2] => carrySave:cs1.c[2]
+f[3] => carrySave:cs1.c[3]
+f[4] => carrySave:cs1.c[4]
+f[5] => carrySave:cs1.c[5]
+g[0] => ~NO_FANOUT~
+g[1] => ~NO_FANOUT~
+g[2] => ~NO_FANOUT~
+g[3] => ~NO_FANOUT~
+g[4] => ~NO_FANOUT~
+g[5] => ~NO_FANOUT~
+s[0] <= rippleCarry:rc.s[0]
+s[1] <= rippleCarry:rc.s[1]
+s[2] <= rippleCarry:rc.s[2]
+s[3] <= rippleCarry:rc.s[3]
+s[4] <= rippleCarry:rc.s[4]
+s[5] <= rippleCarry:rc.s[5]
+s[6] <= rippleCarry:rc.s[6]
+s[7] <= rippleCarry:rc.s[7]
+s[8] <= rippleCarry:rc.s[8]
+
+
+|wallaceTree|carrySave:cs0
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+a[4] => ~NO_FANOUT~
+a[5] => ~NO_FANOUT~
+a[6] => ~NO_FANOUT~
+a[7] => ~NO_FANOUT~
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+c[0] => ~NO_FANOUT~
+c[1] => ~NO_FANOUT~
+c[2] => ~NO_FANOUT~
+c[3] => ~NO_FANOUT~
+c[4] => ~NO_FANOUT~
+c[5] => ~NO_FANOUT~
+c[6] => ~NO_FANOUT~
+c[7] => ~NO_FANOUT~
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+csave[0] <= <GND>
+csave[1] <= fullAdder:FA0.cout
+csave[2] <= fullAdder:FA1.cout
+csave[3] <= fullAdder:FA2.cout
+csave[4] <= fullAdder:FA3.cout
+csave[5] <= fullAdder:FA4.cout
+csave[6] <= fullAdder:FA5.cout
+csave[7] <= fullAdder:FA6.cout
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs0|fullAdder:FA7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+a[4] => ~NO_FANOUT~
+a[5] => ~NO_FANOUT~
+a[6] => ~NO_FANOUT~
+a[7] => ~NO_FANOUT~
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+c[0] => ~NO_FANOUT~
+c[1] => ~NO_FANOUT~
+c[2] => ~NO_FANOUT~
+c[3] => ~NO_FANOUT~
+c[4] => ~NO_FANOUT~
+c[5] => ~NO_FANOUT~
+c[6] => ~NO_FANOUT~
+c[7] => ~NO_FANOUT~
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+csave[0] <= <GND>
+csave[1] <= fullAdder:FA0.cout
+csave[2] <= fullAdder:FA1.cout
+csave[3] <= fullAdder:FA2.cout
+csave[4] <= fullAdder:FA3.cout
+csave[5] <= fullAdder:FA4.cout
+csave[6] <= fullAdder:FA5.cout
+csave[7] <= fullAdder:FA6.cout
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs1|fullAdder:FA7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+a[4] => ~NO_FANOUT~
+a[5] => ~NO_FANOUT~
+a[6] => ~NO_FANOUT~
+a[7] => ~NO_FANOUT~
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+c[0] => ~NO_FANOUT~
+c[1] => ~NO_FANOUT~
+c[2] => ~NO_FANOUT~
+c[3] => ~NO_FANOUT~
+c[4] => ~NO_FANOUT~
+c[5] => ~NO_FANOUT~
+c[6] => ~NO_FANOUT~
+c[7] => ~NO_FANOUT~
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+csave[0] <= <GND>
+csave[1] <= fullAdder:FA0.cout
+csave[2] <= fullAdder:FA1.cout
+csave[3] <= fullAdder:FA2.cout
+csave[4] <= fullAdder:FA3.cout
+csave[5] <= fullAdder:FA4.cout
+csave[6] <= fullAdder:FA5.cout
+csave[7] <= fullAdder:FA6.cout
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs2|fullAdder:FA7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+a[4] => ~NO_FANOUT~
+a[5] => ~NO_FANOUT~
+a[6] => ~NO_FANOUT~
+a[7] => ~NO_FANOUT~
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+c[0] => ~NO_FANOUT~
+c[1] => ~NO_FANOUT~
+c[2] => ~NO_FANOUT~
+c[3] => ~NO_FANOUT~
+c[4] => ~NO_FANOUT~
+c[5] => ~NO_FANOUT~
+c[6] => ~NO_FANOUT~
+c[7] => ~NO_FANOUT~
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+csave[0] <= <GND>
+csave[1] <= fullAdder:FA0.cout
+csave[2] <= fullAdder:FA1.cout
+csave[3] <= fullAdder:FA2.cout
+csave[4] <= fullAdder:FA3.cout
+csave[5] <= fullAdder:FA4.cout
+csave[6] <= fullAdder:FA5.cout
+csave[7] <= fullAdder:FA6.cout
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs3|fullAdder:FA7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+a[4] => ~NO_FANOUT~
+a[5] => ~NO_FANOUT~
+a[6] => ~NO_FANOUT~
+a[7] => ~NO_FANOUT~
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+c[0] => ~NO_FANOUT~
+c[1] => ~NO_FANOUT~
+c[2] => ~NO_FANOUT~
+c[3] => ~NO_FANOUT~
+c[4] => ~NO_FANOUT~
+c[5] => ~NO_FANOUT~
+c[6] => ~NO_FANOUT~
+c[7] => ~NO_FANOUT~
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+csave[0] <= <GND>
+csave[1] <= fullAdder:FA0.cout
+csave[2] <= fullAdder:FA1.cout
+csave[3] <= fullAdder:FA2.cout
+csave[4] <= fullAdder:FA3.cout
+csave[5] <= fullAdder:FA4.cout
+csave[6] <= fullAdder:FA5.cout
+csave[7] <= fullAdder:FA6.cout
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|carrySave:cs4|fullAdder:FA7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc
+a[0] => fullAdder:FA0.a
+a[1] => fullAdder:FA1.a
+a[2] => fullAdder:FA2.a
+a[3] => fullAdder:FA3.a
+a[4] => fullAdder:FA4.a
+a[5] => fullAdder:FA5.a
+a[6] => fullAdder:FA6.a
+a[7] => fullAdder:FA7.a
+b[0] => fullAdder:FA0.b
+b[1] => fullAdder:FA1.b
+b[2] => fullAdder:FA2.b
+b[3] => fullAdder:FA3.b
+b[4] => fullAdder:FA4.b
+b[5] => fullAdder:FA5.b
+b[6] => fullAdder:FA6.b
+b[7] => fullAdder:FA7.b
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+s[8] <= fullAdder:FA7.cout
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wallaceTree|rippleCarry:rc|fullAdder:FA7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

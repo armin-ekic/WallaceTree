@@ -1,0 +1,13 @@
+--This is the components file which will allow us to
+--port map our components across files
+
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+package components is
+
+-----full adder-----
+component fullAdder is
+port()port(a, b, cin: in std_logic;
+	  s, cout: out std_logic);
+end component

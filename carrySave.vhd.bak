@@ -1,0 +1,6 @@
+--This is the carry save adder which will be used to
+--do the calculations for sets of 3 numbers
+
+entity carrySave is
+port(a, b, c: in std_logic_vector(5 downto 0);
+	  s: out std_logic_vector)

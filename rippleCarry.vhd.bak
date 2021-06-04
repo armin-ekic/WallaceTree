@@ -1,0 +1,13 @@
+--This is the carry propogate adder/ ripple carry adder which
+--will handle the final calculation of the wallace tree
+
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity rippleCarry is
+port(a, b: in std_logic_vector(7 downto 0);
+	  s: out std_logic_vector(7 downto 0));
+end rippleCarry
+
+
+

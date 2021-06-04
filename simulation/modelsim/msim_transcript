@@ -1,0 +1,74 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Wallace_Tree_Lab3_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Advanced Digital/Lab 3/fullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder
+# -- Compiling architecture fullAdder_Behavior of fullAdder
+# vcom -93 -work work {E:/Advanced Digital/Lab 3/components.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package components
+# vcom -93 -work work {E:/Advanced Digital/Lab 3/wallaceTree.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package components
+# -- Compiling entity wallaceTree
+# -- Compiling architecture wallaceTree_Behavior of wallaceTree
+# vcom -93 -work work {E:/Advanced Digital/Lab 3/rippleCarry.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package components
+# -- Compiling entity rippleCarry
+# -- Compiling architecture rippleCarry_Behavior of rippleCarry
+# vcom -93 -work work {E:/Advanced Digital/Lab 3/carrySave.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package components
+# -- Compiling entity carrySave
+# -- Compiling architecture carrySave_Behavior of carrySave
+# 
+vsim work.fulladder
+# vsim work.fulladder 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fulladder(fulladder_behavior)
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/fulladder/a
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 25 -starttime 0ps -endtime 1000ps sim:/fulladder/b
+wave create -driver freeze -pattern clock -initialvalue 0 -period 25ps -dutycycle 25 -starttime 0ps -endtime 1000ps sim:/fulladder/cin
+add wave -position insertpoint  \
+sim:/fulladder/s
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: aekic  Hostname: DESKTOP-53G43N2  ProcessID: 19544
+# 
+#           Attempting to use alternate WLF file "./wlftskh2ng".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftskh2ng
+# 
+add wave -position insertpoint  \
+sim:/fulladder/cout
+restart
+run

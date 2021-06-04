@@ -1,0 +1,170 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Advanced Digital\Lab 3\simulation\modelsim
+Ecarrysave
+Z1 w1585154120
+Z2 DPx4 work 10 components 0 22 M_Jh3<_lONma1a1ZcGPg32
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dE:\Advanced Digital\Lab 3\simulation\modelsim
+Z6 8E:/Advanced Digital/Lab 3/carrySave.vhd
+Z7 FE:/Advanced Digital/Lab 3/carrySave.vhd
+l0
+L8
+V@SDfCjO1m@nLMBU3FKnaO0
+!s100 knPzUb<gGI:3_48bGcX=k0
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1585179743.871000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/Advanced Digital/Lab 3/carrySave.vhd|
+Z11 !s107 E:/Advanced Digital/Lab 3/carrySave.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+Acarrysave_behavior
+R2
+R3
+R4
+DEx4 work 9 carrysave 0 22 @SDfCjO1m@nLMBU3FKnaO0
+l19
+L16
+V6:E_J;?L_E6;_]ThMKcdO0
+!s100 VOo:12Z?C:HfC3ozkf?0F3
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Pcomponents
+R3
+R4
+w1585087970
+R5
+8E:/Advanced Digital/Lab 3/components.vhd
+FE:/Advanced Digital/Lab 3/components.vhd
+l0
+L7
+VM_Jh3<_lONma1a1ZcGPg32
+R8
+31
+R12
+R13
+!s100 4j=?Dgb;I<`mV4bd]?KoO2
+!i10b 1
+!s108 1585179741.745000
+!s90 -reportprogress|300|-93|-work|work|E:/Advanced Digital/Lab 3/components.vhd|
+!s107 E:/Advanced Digital/Lab 3/components.vhd|
+Efulladder
+Z14 w1584472086
+R3
+R4
+R5
+Z15 8E:/Advanced Digital/Lab 3/fullAdder.vhd
+Z16 FE:/Advanced Digital/Lab 3/fullAdder.vhd
+l0
+L7
+V<aZAkm:O^]XnKo:JWlCCf0
+R8
+31
+Z17 !s108 1585179741.218000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/Advanced Digital/Lab 3/fullAdder.vhd|
+Z19 !s107 E:/Advanced Digital/Lab 3/fullAdder.vhd|
+R12
+R13
+!s100 nkdzRRNM4k5JH0Xb9k_2h2
+!i10b 1
+Afulladder_behavior
+R3
+R4
+DEx4 work 9 fulladder 0 22 <aZAkm:O^]XnKo:JWlCCf0
+l13
+L12
+VC;?EKV7Ize0FenhXnZBJ@1
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 Cz@[Xd1Xo9_[<A1MMi:M62
+!i10b 1
+Eripplecarry
+R14
+R2
+R3
+R4
+R5
+Z20 8E:/Advanced Digital/Lab 3/rippleCarry.vhd
+Z21 FE:/Advanced Digital/Lab 3/rippleCarry.vhd
+l0
+L8
+V>Ui7HZa1<@;=NKHe9LLK_0
+R8
+31
+Z22 !s108 1585179743.099000
+Z23 !s90 -reportprogress|300|-93|-work|work|E:/Advanced Digital/Lab 3/rippleCarry.vhd|
+Z24 !s107 E:/Advanced Digital/Lab 3/rippleCarry.vhd|
+R12
+R13
+!s100 fbm96DFOfL@GWI3nLie961
+!i10b 1
+Aripplecarry_behavior
+R2
+R3
+R4
+DEx4 work 11 ripplecarry 0 22 >Ui7HZa1<@;=NKHe9LLK_0
+l16
+L13
+VFdfDlLhf<f7Rb72?cLlY03
+R8
+31
+R22
+R23
+R24
+R12
+R13
+!s100 VToOI_Hl89NDV=L_7QMk[2
+!i10b 1
+Ewallacetree
+Z25 w1585179672
+R2
+R3
+R4
+R5
+Z26 8E:/Advanced Digital/Lab 3/wallaceTree.vhd
+Z27 FE:/Advanced Digital/Lab 3/wallaceTree.vhd
+l0
+L8
+V8=7bFh:d>k>>o<:f^9IFR0
+R8
+31
+Z28 !s108 1585179742.578000
+Z29 !s90 -reportprogress|300|-93|-work|work|E:/Advanced Digital/Lab 3/wallaceTree.vhd|
+Z30 !s107 E:/Advanced Digital/Lab 3/wallaceTree.vhd|
+R12
+R13
+!s100 X0lkk<h:@<0=V_lH9XBgn2
+!i10b 1
+Awallacetree_behavior
+R2
+R3
+R4
+DEx4 work 11 wallacetree 0 22 8=7bFh:d>k>>o<:f^9IFR0
+l16
+L13
+VBVb^gb?K=2`MhBW[`D7mc2
+R8
+31
+R28
+R29
+R30
+R12
+R13
+!s100 `Haz]z0]E1i<Ijfk;lV192
+!i10b 1
